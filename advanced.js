@@ -447,6 +447,15 @@ function RoboroCanvas(id)
     this.context2D.fillText(text, x, y);
   };
   
+  this.textSize = function(size, text)
+  {
+    this.context2D.font = size + "pt Courier";
+    var width = this.context2D.measureText(text).width;
+    var height = this.context2D.measureText(text).height;
+    
+    return {width: width, height: height};
+  }
+  
   this.random = function(max, intervalMax)
   {
     if (typeof(intervalMax) == 'undefined')
