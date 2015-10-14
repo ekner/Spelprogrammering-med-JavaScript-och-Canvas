@@ -120,6 +120,7 @@ function init()
        "ring",
        "arc",
        "text",
+       "textSize"
        "random",
        "randomAlternative",
        "picture",
@@ -228,7 +229,7 @@ function init()
   };
   
   loadErrorConsole();
-  loadScript("http://www.spelprogrammering.nu/advanced.js", simplify);
+  loadScript("https://raw.githubusercontent.com/ekner/Spelprogrammering-med-JavaScript-och-Canvas/master/advanced.js", simplify);
 }
 
 function loadErrorConsole() {
